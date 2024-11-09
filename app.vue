@@ -2,13 +2,10 @@
   <div>
     <Advertisement />
     <Header />
-    <!-- <CourseInfo class="relative" /> -->
     <div class="relative">
-      <!-- Wrapper for positioning -->
       <div class="relative">
-        <CourseInfo class="w-full" /> <!-- Full width CourseInfo -->
-        <PurchaseCard class="absolute top-0 right-[100px] z-10" />
-        <!-- Adjust top and left values as needed -->
+        <CourseInfo class="w-full" /> 
+        <PurchaseCard class="absolute top-0 right-[100px]" />
       </div>
     </div>
     <Course/>
