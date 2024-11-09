@@ -8,4 +8,8 @@ export default defineNuxtConfig({
     configPath: 'tailwind.config.js',
     exposeConfig: false,
   },
+  app: {
+    baseURL: '/udemy_clone/'  // Set the base URL to the GitHub repository name
+  }
 })
+
