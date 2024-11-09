@@ -12,6 +12,10 @@
       </div>
     </div>
     <Course/>
+    <ExploreTopics/>
+    <CourseContent/>
+    <Requirement/>
+    <CourseDescription/>
   </div>
 </template>
 
