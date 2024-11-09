@@ -1,12 +1,30 @@
 <template>
-    <div class=" bg-white shadow-md rounded-lg max-w-sm mx-auto mt-10 mb-10">
-        <div class="hidden md:block w-full h-auto mb-4 z-0">
-            <img
-                src="https://img-c.udemycdn.com/course/240x135/6080417_89c8_2.jpg"
-                alt="Course Preview"
-                class="w-full h-auto"
-            />
+    <div class="bg-white shadow-md rounded-lg max-w-sm mx-auto mt-10 mb-10">
+      <!-- Image container with relative positioning -->
+      <div class="relative w-full h-auto mb-4 z-0">
+        <img
+          src="https://img-c.udemycdn.com/course/240x135/6080417_89c8_2.jpg"
+          alt="Course Preview"
+          class="w-full h-auto"
+        />
+  
+        <!-- Play Icon and Preview Text centered on the image -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50">
+            <!-- Play Icon in the center -->
+            <div class="h-16 w-16 bg-white rounded-full flex items-center justify-center cursor-pointer">
+                <svg class="w-12 h-12 text-black" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M4 3v14l12-7-12-7z"/>
+                </svg>
             </div>
+
+            <!-- Preview Text at the bottom -->
+            <span class="text-white font-semibold text-xl mt-4">Preview this course</span>
+        </div>
+
+
+
+      </div>
+  
       <div class="mb-2 px-6">
         <div class="flex items-center justify-start space-x-2">
           <span class="text-4xl font-bold text-black">$11.99</span>
@@ -26,15 +44,13 @@
         <button class="w-full py-3 bg-purple-700 text-white rounded-md hover:bg-purple-900 transition">
           Add to cart
         </button>
-        <button class="w-full py-3  text-black border border-black  hover:bg-white-800 transition">
+        <button class="w-full py-3 text-black border border-black hover:bg-white-800 transition">
           Buy now
         </button>
         <button class="w-full mt-2 text-gray-600 text-sm transition">
-            30-Day Money-Back Guarantee
+          30-Day Money-Back Guarantee
         </button>
       </div>
-  
-      
   
       <div class="mt-2 px-6">
         <h2 class="text-lg font-semibold mb-2">This course includes:</h2>
@@ -65,50 +81,36 @@
           </li>
         </ul>
       </div>
+  
       <div class="flex flex-row space-x-8 font-bold text-sm mt-4 px-6">
-        <a href="#" class="underline">
-            <span>Share</span>
-        </a>
-        <a href="#" class="underline">
-            <span>Gift this course</span>
-        </a>
-        <a href="#" class="underline">
-            <span>Apply Coupon</span>
-        </a>
-    </div>  
-    <div class=" mt-4 p-6">
-        <div class = "border-dashed border border-gray-600">
-            <ul class="list-none pl-4">
-                <li data-purpose="code-text" class="text-gray-600 text-sm">
-                    <b>ST2MT110724BNEW</b> is applied
-                </li>
-                <li class="text-sm text-gray-600">Udemy coupon</li>
-            </ul>
+        <a href="#" class="underline"><span>Share</span></a>
+        <a href="#" class="underline"><span>Gift this course</span></a>
+        <a href="#" class="underline"><span>Apply Coupon</span></a>
+      </div>
+  
+      <div class="mt-4 p-6">
+        <div class="border-dashed border border-gray-600">
+          <ul class="list-none pl-4">
+            <li data-purpose="code-text" class="text-gray-600 text-sm">
+              <b>ST2MT110724BNEW</b> is applied
+            </li>
+            <li class="text-sm text-gray-600">Udemy coupon</li>
+          </ul>
         </div>
         <button type="button" class="absolute top-0 right-0 p-2 text-black hover:text-gray-900">
-                <span class="text-lg font-bold">X</span>
-            </button>
-    </div>
-
-        <div class="sidebar-container-buy-for-team bg-white p-6 border-t border-gray-300">
-            <h2 class="text-lg font-semibold mb-2">Training 5 or more people?</h2>
-            <p class="text-sm text-gray-600 mb-4">
-            Get your team access to 27,000+ top Udemy courses anytime, anywhere.
-            </p>
-            <button class="w-full py-2 text-black border border-black  hover:bg-white-800 transition text-bold">
-                Try Udemy for Business
-            </button>
-        </div>
+          <span class="text-lg font-bold">X</span>
+        </button>
+      </div>
+  
+      <div class="sidebar-container-buy-for-team bg-white p-6 border-t border-gray-300">
+        <h2 class="text-lg font-semibold mb-2">Training 5 or more people?</h2>
+        <p class="text-sm text-gray-600 mb-4">
+          Get your team access to 27,000+ top Udemy courses anytime, anywhere.
+        </p>
+        <button class="w-full py-2 text-black border border-black hover:bg-white-800 transition text-bold">
+          Try Udemy for Business
+        </button>
+      </div>
     </div>
   </template>
-  
-  <script>
-  export default {
-    name: 'PurchaseSection'
-  }
-  </script>
-  
-  <style scoped>
-  /* You can add scoped styles here if needed */
-  </style>
   
